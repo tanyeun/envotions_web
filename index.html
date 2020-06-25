@@ -1,93 +1,606 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <meta name="title" content="智誠科技服務股份有限公司"/>
-    <meta name="description" content="智誠科技服務提供專業軟體資訊諮詢及顧問服務，迅速整合領域知識及資源並提供專業支援及on-site 及 off-shore IT服務，以國內外科技整合為基礎，建立相關的資源與訊息，並協助客戶落實到產業面、行銷面，並專注提供一站式的Total Solution資訊整合服務。"/>
-    <meta name="keywords" content="軟體資訊諮詢,顧問服務 ,Java程式開發服務,IOS/Android 開發服務,技術顧問服務,應用系統整合及建置服務,硬體整合環境的建立,軟體授權及導入"/>
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+<title>Envotions Technology Services</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="css/w3css.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 
-    <!--FB分享內容-->
-    <meta property="og:url" content="http://www.envotions.com/images/index.html"/>
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="智誠科技服務股份有限公司">
-    <meta property="og:image" content="http://www.envotions.com/images/fbthumb.jpg"/>
-    <meta property="og:description" content="提供專業軟體資訊諮詢及顧問服務，迅速整合領域知識及資源並提供專業支援及on-site 及 off-shore IT服務，以國內外科技整合為基礎，建立相關的資源與訊息，並協助客戶落實到產業面、行銷面，並專注提供一站式的Total Solution資訊整合服務。">
-    <meta property="og:image:width" content="150"/>
-    <meta property="og:image:height" content="150"/>
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 
-<title>智誠科技服務股份有限公司</title>
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
 
-<link rel="stylesheet" type="text/css" href="css/style.css"/>
-</head>
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("images/home_banner.jpg");
+  min-height: 100%;
+}
+
+.aboutimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("images/about_banner.jpg");
+}
+
+.serviceimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("images/service_banner.jpg");
+}
+
+.techimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("images/tech_banner.jpg");
+}
+
+.customerimg {
+  background-position: right;
+  background-size: cover;
+  background-image: url("images/customer_banner.jpg");
+}
+
+.w3-bar {
+  padding: 0;
+}
+
+.w3-button_modified {
+  padding: 16px;
+  margin-top: 40px;
+}
+
+.w3-button_language {
+  padding: 16px;
+  margin-top: 35px;
+}
+
+.w3-bar-item_language{
+    padding:8px 16px;
+    float:left;
+    border:none;
+    display:block;
+    outline:0;
+    position: absolute;
+}
+
+.w3-bottombar_modified {
+  border-bottom: 3px solid #ff9900;
+}
+
+.w3-circle_modified {
+    border-radius: 4em;
+}
+
+.w3-quarter_modified{
+    float:left;
+    width:25%;
+}
 
 
 
-<body>
+</style>
 
-<!--HEADER-->
-<div class="header">
-<div class="header_container">
-<div class="header_logo"><a href="index.html"><h1>智誠科技服務股份有限公司</h1></a></div>
-<div class="menu">
-<ul>
-    <li><a href="index.html">首   頁</a></li>
-    <li><a href="about.html">關於我們</a></li>
-    <li><a href="service.html">服務內容</a></li>
-    <li><a href="item.html">技術項目</a></li>
-    <li><a href="work.html">成功案例</a></li>
-    <li><a href="contact.html">聯絡我們</a></li>
-    <li><a href="http://www.envotions.com/job/index.html" target="_blank">人才招募</a></li>  
-</ul>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">    
+  <div class="w3-bar w3-white w3-card w3-bottombar_modified" id="myNavbar">
+      <a href="#home" class="w3-bar-item w3-button w3-wide"><img class="w3-image" src="images/logo.png" alt="logo"></a>
+      <a href="#language" class="w3-bar-item w3-button w3-hover-none w3-large w3-right">
+        <select id="lang-switch">
+            <option value="en">English</option>
+            <option value="zh">中文</option>
+        </select></a>
+    <!-- Right-sided navbar links -->
+    <div lang="en">
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button w3-button_modified"><i class="fa fa-info-circle"></i> ABOUT</a>
+      <a href="#service" class="w3-bar-item w3-button w3-button_modified"><i class="fa fa-gear"></i> SERVICES</a>
+      <a href="#technology" class="w3-bar-item w3-button w3-button_modified"><i class="fa fa-microchip"></i> TECHNOLOGY</a>
+      <a href="#customer" class="w3-bar-item w3-button w3-button_modified"><i class="fa fa-handshake-o"></i> CUSTOMERS</a>
+      <a href="#contact" class="w3-bar-item w3-button w3-button_modified"><i class="fa fa-envelope"></i> CONTACT</a>
+      <a href="job/index.html" class="w3-bar-item w3-button w3-button_modified"><i class="fa fa-users"></i> JOB SECTION</a>
+    </div>
+    </div>
+    
+    <div lang="zh">
+    <div class="w3-right w3-hide-small">
+      <a href="#zh_about" class="w3-bar-item w3-button w3-button_modified"><i class="fa fa-info-circle"></i> 關於我們</a>
+      <a href="#zh_service" class="w3-bar-item w3-button w3-button_modified"><i class="fa fa-gear"></i> 服務內容</a>
+      <a href="#zh_technology" class="w3-bar-item w3-button w3-button_modified"><i class="fa fa-microchip"></i> 技術項目</a>
+      <a href="#zh_customer" class="w3-bar-item w3-button w3-button_modified"><i class="fa fa-handshake-o"></i> 成功案例</a>
+      <a href="#zh_contact" class="w3-bar-item w3-button w3-button_modified"><i class="fa fa-envelope"></i> 聯絡我們</a>
+      <a href="job/index.html" class="w3-bar-item w3-button w3-button_modified"><i class="fa fa-users"></i> 人才招募</a>
+    </div>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+        <i class="fa fa-bars"></i>
+    </a>
+    
+  </div>
+
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" id="mySidebar">
+  <span lang="en">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-info-circle"></i> ABOUT</a>
+  <a href="#service" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-gear"></i> SERVICES</a>
+  <a href="#technology" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-microchip"></i> TECHNOLOGY</a>
+  <a href="#customer" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-handshake-o"></i> CUSTOMERS</a>
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
+  <a href="job/index.html" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-users"></i> JOB SECTION</a>
+  </span>
+    
+  <span lang="zh">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="#zh_about" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-info-circle"></i> 關於我們</a>
+  <a href="#zh_service" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-gear"></i> 服務內容</a>
+  <a href="#zh_technology" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-microchip"></i> 技術項目</a>
+  <a href="#zh_customer" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-handshake-o"></i> 成功案例</a>
+  <a href="#zh_contact" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> 聯絡我們</a>
+  <a href="job/index.html" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-users"></i> 人才招募</a>
+  </span>
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_close()">
+        <i class="fa fa-bars"></i>
+    </a>
+</nav>
+</div>
+
+<!-- English Content Start -->
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container" id="home">
+  <div lang="en">
+  <div class="w3-display-left w3-text-white" style="padding:20px; margin:30px">
+      <span class="w3-xxlarge">Technology Consultancy Specialization in IT Services</span><br>
+    <p><a href="#contact" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Connect with us to know our value proposition</a></p>
+    <p><a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Know more about us</a></p>
+  </div>
+  </div>
+  
+  <div lang="zh">
+  <div class="w3-display-left w3-text-white" style="padding:20px; margin:30px">
+      <span class="w3-xxxlarge">專業技術人力協助及科技諮詢</span><br>
+    <p><a href="#zh_contact" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">聯繫我們以取得服務</a></p>
+    <p><a href="#zh_about" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">瞭解更多</a></p>
+  </div>
+  </div>
+  <div class="w3-display-topright w3-text-dark-gray w3-xlarge" style="padding:100px 48px">
+   <!--
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <a class="fa fa-twitter w3-hover-opacity"></a>
+    -->
+    <a href="https://www.linkedin.com/company/envotion-technology-services/" class="fa fa-linkedin w3-hover-opacity w3-hover-text-orange"></a>
+  </div>
+</header>
+
+<div lang="en">
+<!-- About Section -->
+<div class="aboutimg w3-container" style="padding:128px 16px 16px 16px" id="about">
+  <h3 class="w3-center">ABOUT THE COMPANY</h3>
+  <p class="w3-center w3-large">Envotions Technology Services is a global IT services company based out of Taiwan with branches in US, China and India</p>
+  <p class="w3-center w3-large">Since establishment in January 2015, Envotions Technology Services is focused in providing </br>Enterprises 
+                and Technology Companies with Services, Technical consultants and professionals<br/> in the field of Enterprise applications, 
+                IT applications, IT Infrastructure,<br/> Firmware and Hardware services</p>
+  
+    <div class="w3-container" style="padding:72px 96px" id="metrics">
+         <div class="w3-row w3-center w3-dark-gray w3-padding-64 w3-round-xxlarge">
+          <div class="w3-quarter">
+            <span class="w3-xxlarge">4+</span>
+            <br>Geographies
+          </div>
+          <div class="w3-quarter">
+            <span class="w3-xxlarge">900+</span>
+            <br>Employees
+          </div>
+          <div class="w3-quarter">
+            <span class="w3-xxlarge">70+</span>
+            <br>Happy Clients
+          </div>
+          <div class="w3-quarter">
+            <span class="w3-xxlarge">20+</span>
+            <br>Partners
+          </div>
+         </div>
+    </div>
+</div>
+
+<!-- Service Section  -->
+<div class="serviceimg w3-container w3-light-grey" style="padding:160px 16px" id="service">
+    <div class="w3-col m6"><h3>OUR SERVICES</h3>
+      <p>Envotions Technology Services is focused on providing quality services and consultants for customers in IT and IT Enabled Service</p>
+      <div class="w3-col m6">
+          <h4><i class="fa fa-th" style="margin:10px"></i>Domains</h4>
+          <p><i class="fa fa-cogs" style="margin:10px"></i>Product Engineering</p>
+          <p><i class="fa fa-phone-square" style="margin:10px"></i>Telecommunication</p>
+          <p><i class="fa fa-bank" style="margin:10px"></i>Banking</p>
+      </div>
+      <div class="w3-col m6">
+          <h4><i class="fa fa-gear" style="margin:10px"></i>Services</h4>
+          <p><i class="fa fa-pencil-square-o" style="margin:10px"></i>Project Management</p>
+          <p><i class="fa fa-file-code-o" style="margin:10px"></i>Application Development & Maintenance</p>
+          <p><i class="fa fa-server" style="margin:10px"></i>IT Infrastructure Management</p>
+          <p><i class="fa fa-users" style="margin:10px"></i>Consultancy and Manpower Services</p>
+      </div>
+    </div>
+</div>
+
+
+<!-- Technology Section  -->
+<div class="techimg w3-container w3-grayscale-min" style="padding:148px 16px" id="technology">
+    <div class="w3-right"><h3>TECHNOLOGY AND SKILL SET</h3>
+      <h6>Our talented professional staff are well versed with latest technologies</h6>
+          <p><i class="fa fa-check-square-o">  Financial platforms</i></p>
+          <p><i class="fa fa-check-square-o">  Market data feeds</i></p>
+          <p><i class="fa fa-check-square-o">  Mobile Device Technologies</i></p>
+          <p><i class="fa fa-check-square-o">  Server, Storage and Networking Technologies</i></p>
+          <p><i class="fa fa-check-square-o">  Printer, Desktop and Laptop Technologies</i></p>
+          <p><i class="fa fa-check-square-o">  Multi-Programming Languages</i></p>
+          <p><i class="fa fa-check-square-o">  Test Automation Tools and Frameworks</i></p>
+          <p><i class="fa fa-check-square-o">  Client-Server Applications</i></p>
+          <p><i class="fa fa-check-square-o">  Web Applications</i></p>
+          <p><i class="fa fa-check-square-o">  Legacy Technologies</i></p>
+    </div>
+</div>
+
+<!-- Customer Section  -->
+<div class="customerimg w3-container" style="padding:160px 16px" id="customer">
+    <div class="w3-col m10"><h3>OUR CUSTOMERS</h3>
+      <div class="w3-col m8">
+          <img src="images/index_customer.png" alt="Customer logos" style="width:100%; height: 240px; padding: 16px">
+      </div>
+    </div>
+</div>
+
+
+<!-- Contact Section -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact">
+  <h3 class="w3-center">CONTACT</h3>
+  <p class="w3-center w3-large">Lets get in touch. Send us a message:</p>
+  <div style="margin-top:48px">
+  <div class= "w3-col m3" style="margin-top:48px">
+    <p><a href="#map_taipei" class="w3-button w3-large w3-dark-gray"><i class="fa fa-th fa-map-marker"> </i> Taipei City, Taiwan</a></p>
+    <p><i class="fa fa-phone fa-fw w3-large w3-margin-right"></i> Phone: + 886-2-2715-7555</p>
+    <p><i class="fa fa-envelope fa-fw w3-large w3-margin-right"> </i> Email: humeek@envotions.com</p>
+  </div>
+  <div class= "w3-col m3" style="margin-top:48px">
+      <p><a href="#map_hongkong" class="w3-button w3-large w3-dark-gray"><i class="fa fa-th fa-map-marker"></i> Hong Kong, China</a></p>
+    <p><i class="fa fa-phone fa-fw w3-large w3-margin-right"></i> Phone: + 886-2-2715-7555</p>
+    <p><i class="fa fa-envelope fa-fw w3-large w3-margin-right"> </i> Email: humeek@envotions.com</p>
+  </div>
+  <div class= "w3-col m3" style="margin-top:48px">
+    <p><a href="#map_california" class="w3-button w3-large w3-dark-gray"><i class="fa fa-th fa-map-marker"></i> California, US</a></p>
+    <p><i class="fa fa-phone fa-fw w3-large w3-margin-right"></i> Phone: + 886-2-2715-7555</p>
+    <p><i class="fa fa-envelope fa-fw w3-large w3-margin-right"> </i> Email: humeek@envotions.com</p>
+  </div>
+  <div class= "w3-col m3" style="margin-top:48px">
+    <p><a href="#map_bangalore" class="w3-button w3-large w3-dark-gray"><i class="fa fa-th fa-map-marker"></i> Bangalore, India</a></p>
+    <p><i class="fa fa-phone fa-fw w3-large w3-margin-right"></i> Phone: + 91 9880932498</p>
+    <p><i class="fa fa-envelope fa-fw w3-large w3-margin-right"> </i> Email: humeek@envotions.com</p>
+  </div>
+    <br>
+    <form method="post" action="mailto:humeek@envotions.com?subject=Contact Email" enctype="text/plain">
+      <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></p>
+      <p>
+        <button class="w3-button w3-dark-gray" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </p>
+    </form>
+    <!-- Image of location/map -->
+    <div class="w3-col m6" style="padding:128px 0 0 0; width: 48.3%; margin: 10px" id="map_taipei">
+        <img src="images/Envotions_Taipei.png" class="w3-image" alt="map" style="border: 2px solid gray">
+    <p><a class="w3-text w3-small"></a> Address: 15F, No.99, Fuxing North Road, Songshan District, Taipei City <br> Phone: + 886-2-2715-7555 | Fax: + 886-2-2715-7513</p>
+    </div>
+ 
+    <div class="w3-col m6" style="padding:128px 0 0 0; width: 48.3%; margin: 10px" id="map_hongkong">
+    <img src="images/Envotions_HongKong.png" class="w3-image" style="border: 2px solid gray">
+    <p><a class="w3-text w3-small"></a> Address: 43, Dominion Centre, Queen's Road E., Wanchai District, Hong Kong<br> Phone: + 886-2-2715-7555 | Fax: + 886-2-2715-7513</p>
+    </div>
+ 
+    <div class="w3-col m6" style="padding:128px 0 0 0; width: 48.3%; margin: 10px" id="map_california">
+    <img src="images/Envotions_CA.png" class="w3-image" style="border: 2px solid gray">
+    <p><a class="w3-text w3-small"></a> Address: 17534 Von Karman Ave, Irvine, CA 92614 <br> Phone: + 886-2-2715-7555 | Fax: + 886-2-2715-7513</p>
+    </div>
+ 
+    <div class="w3-col m6" style="padding:128px 0 0 0; width: 48.3%; margin: 10px" id="map_bangalore">
+    <img src="images/Envotions_Bangalore.png" class="w3-image" style="border: 2px solid gray">
+    <p><a class="w3-text w3-small"></a> Address: 9, 1st floor, 1st Main, Pampa Extn., Hebbal Kempapura, Bangalore <br> Phone: + 91 9880932498 | Fax: + 886-2-2715-7513</p>
+    </div>
+ 
+    <div class="w3-col m6" style="padding:128px 0 0 0; width: 48.3%; margin: 10px" id="map_shanghai">
+    <img src="images/Envotions_ShangHai.png" class="w3-image" style="border: 2px solid gray">
+    <p><a class="w3-text w3-small"></a> Address: 96, Lane 1333, Xinlong Road, Minhang District, Shanghai City, China <br> Phone: + 886-2-2715-7555 | Fax: + 886-2-2715-7513</p>
+    </div>
+    
+  </div>
 </div>
 </div>
+<!--- English Content End ---->
+
+<!--- Chinese Content Start ---->
+
+<div lang="zh">
+<!-- About Section -->
+<div class="aboutimg" style="padding:128px 16px 16px 16px" id="zh_about">
+  <div class="w3-container">
+  <h3 class="w3-center">關於我們</h3>
+  <p class="w3-center w3-large">全球性IT服務公司。總部位於臺灣，在美國、中國和印度設有分部。</p>
+  <p class="w3-center">智誠科技於2015年1月成立至今，以專案顧問及科技專案服務為主，快速切入市場服務客戶，提供專業的技術人力協助，<br/>為客戶建立穩定的IT基礎架構、高擴充性的企業應用服務，整合企業現有IT技術與應用，發揮每一份投資應有的價值。<br/>
+        以國內外資訊科技整合專長為基礎，提供高素質的軟體開發人才、專業的軟體顧問服務及各產業用戶之相關資訊系統部門軟體開發，<br/>以成熟穩定的技術，完善的軟體工程管理，協助客戶在各項產業有效地應用資訊系統，以強化營運效率並提升產業競爭力。<br/>
+        核心資源來自於強大完整的策略服務以及各界相關資源，建立相關的資源與人脈，成功的落實到產業面、<br/>行銷面，並強調完整的資源整合服務，為客戶提供高品質的資訊服務及期望是智誠科技的目標願景。</p>
+    <div class="w3-container" style="padding:72px 96px" id="metrics">
+         <div class="w3-row w3-center w3-dark-gray w3-padding-64">
+          <div class="w3-quarter">
+            <span class="w3-xxlarge">4+</span>
+            <br>區域分布
+          </div>
+          <div class="w3-quarter">
+            <span class="w3-xxlarge">900+</span>
+            <br>公司僱員
+          </div>
+          <div class="w3-quarter">
+            <span class="w3-xxlarge">70+</span>
+            <br>Happy Cilents
+          </div>
+          <div class="w3-quarter">
+            <span class="w3-xxlarge">20+</span>
+            <br>商業夥伴
+          </div>
+         </div>
+    </div>
+  </div>
 </div>
-<!--HEADER-->
 
-
-<!--BANNER-->
-<div class="banner"></div>
-<!--BANNER-->
-
-
-<!--CONTAINER-->
-<div class="main_container_about">
-<div class="main_contain_about"><h2>關於我們</h2> 
-<h3>智誠科技於2015年1月成立至今，以專案顧問及科技專案支援為主，快速切入市場服務客戶，
-提供專業的技術專案協助，為客戶建立穩定的IT基礎架構、高擴充性的企業應用服務，整合企業現有IT技術與應用，
-發揮每一份投資應有的價值。</h3></div>
-<div class="about_more"><a href="about.html"></a></div>
+<!-- Service Section -->
+<div class="serviceimg w3-container w3-light-grey" style="padding:160px 16px" id="zh_service"> 
+    <div class="w3-col m6"><h3>服務內容</h3>
+      <p>智誠科技公司致力於為IT產業及IT技術人員提供優質的諮詢服務</p>
+      <div class="w3-col m6">
+          <h4><i class="fa fa-th" style="margin:10px"></i>服務領域</h4>
+          <p><i class="fa fa-print" style="margin:10px"></i>產品工程</p>
+          <p><i class="fa fa-phone" style="margin:10px"></i>電子通訊</p>
+          <p><i class="fa fa-bank" style="margin:10px"></i>金融</p>
+      </div>
+      <div class="w3-col m6">
+          <h4><i class="fa fa-gear" style="margin:10px"></i>技術服務</h4>
+          <p><i class="fa fa-pencil-square-o" style="margin:10px"></i>項目管理</p>
+          <p><i class="fa fa-file-code-o" style="margin:10px"></i>應用開發與維護</p>
+          <p><i class="fa fa-server" style="margin:10px"></i>IT基礎架構管理</p>
+          <p><i class="fa fa-male" style="margin:10px"></i>顧問及人力服務</p>
+      </div>
+    </div>
 </div>
 
-<div class="main_container_service">
-<div class="main_contain_service"><h4>服務內容</h4>
-<h5>資通訊系統暨資安整合規劃建置暨顧問服務</h5>
-<h5>網際網路平台行銷暨資訊化整合顧問服務</h5>
-<h5>企業資訊暨網路系統委外管理服務</h5>
-<div class="service_more"><a href="service.html"></a></div>
+
+<!-- Technology Section -->
+<div class="techimg w3-container w3-grayscale-min" style="padding:148px 16px" id="zh_technology">
+    <div class="w3-right" style="margin-right: 200px"><h3>技術項目</h3>
+      <h6>我們的人才精通最新的技術</h6>
+          <p><i class="fa fa-check-square-o">  金融平台</i></p>
+          <p><i class="fa fa-check-square-o">  市場數據</i></p>
+          <p><i class="fa fa-check-square-o">  行動裝置技術</i></p>
+          <p><i class="fa fa-check-square-o">  伺服器、存儲及網路技術</i></p>
+          <p><i class="fa fa-check-square-o">  打印機、桌上型及筆電技術</i></p>
+          <p><i class="fa fa-check-square-o">  多種編程語言</i></p>
+          <p><i class="fa fa-check-square-o">  自動化測試工具</i></p>
+          <p><i class="fa fa-check-square-o">  客戶端伺服應用</i></p>
+          <p><i class="fa fa-check-square-o">  網頁應用</i></p>
+          <p><i class="fa fa-check-square-o">  傳統技術</i></p>
+    </div>
+</div>
+
+<!-- Customer Section -->
+<div class="customerimg w3-container" style="padding:160px 16px" id="zh_customer">
+    <div class="w3-col m10"><h3>成功案例</h3>
+      <div class="w3-col m8">
+          <img src="images/index_customer.png" style="width:100%; height: 240px; padding: 16px">
+      </div>
+    </div>
+</div>
+
+
+<!-- Contact Section -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px" id="zh_contact">
+  <h3 class="w3-center">聯絡我們</h3>
+  <p class="w3-center w3-large">傳送訊息以取得聯繫:</p>
+  <div style="margin-top:48px">
+  <div class= "w3-col m3" style="margin-top:48px">
+    <p><a href="#map_taipei_zh" class="w3-button w3-large w3-dark-gray"><i class="fa fa-th fa-map-marker"> </i> 臺北, 臺灣</a></p>
+    <p><i class="fa fa-phone fa-fw w3-large w3-margin-right"></i> 電話: + 886-2-2715-7555</p>
+    <p><i class="fa fa-envelope fa-fw w3-large w3-margin-right"> </i> 信箱: humeek@envotions.com</p>
+  </div>
+  <div class= "w3-col m3" style="margin-top:48px">
+    <p><a href="#map_hongkong_zh" class="w3-button w3-large w3-dark-gray"><i class="fa fa-th fa-map-marker"></i> 香港, 中國</a></p>
+    <p><i class="fa fa-phone fa-fw w3-large w3-margin-right"></i> 電話: + 886-2-2715-7555</p>
+    <p><i class="fa fa-envelope fa-fw w3-large w3-margin-right"> </i> 信箱: humeek@envotions.com</p>
+  </div>
+  <div class= "w3-col m3" style="margin-top:48px">
+    <p><a href="#map_california_zh" class="w3-button w3-large w3-dark-gray"><i class="fa fa-th fa-map-marker"></i> 加州, 美國</a></p>
+    <p><i class="fa fa-phone fa-fw w3-large w3-margin-right"></i> 電話: + 886-2-2715-7555</p>
+    <p><i class="fa fa-envelope fa-fw w3-large w3-margin-right"> </i> 信箱: humeek@envotions.com</p>
+  </div>
+  <div class= "w3-col m3" style="margin-top:48px">
+      <p><a href="#map_bangalore_zh" class="w3-button w3-large w3-dark-gray"><i class="fa fa-th fa-map-marker"></i> 邦加羅爾, 印度</a></p>
+    <p><i class="fa fa-phone fa-fw w3-large w3-margin-right"></i> 電話: + 91 9880932498</p>
+    <p><i class="fa fa-envelope fa-fw w3-large w3-margin-right"> </i> 信箱: humeek@envotions.com</p>
+  </div>
+    <br>
+    <form method="post" action="http://toolkit.url.com.tw/qform/qform.php?servername=envotions.com&serverid=94503">
+      <p><input class="w3-input w3-border" type="text" placeholder="名稱" required name="Name"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="電子郵件" required name="Email"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="主旨" required name="Subject"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="您的留言" required name="Meassage"></p>
+      <p>
+       
+            <input name="backurl" value="http://www.envotions.com" type="hidden">
+            <input name="lang" value="zh-TW" type="hidden">
+            <input name="submit" value="送出" type="submit">
+        
+      </p>
+    </form>
+    <!-- Image of location/map -->
+    <div class="w3-col m6" style="padding:128px 0 0 0; width: 48.3%; margin: 10px" id="map_taipei_zh">
+        <img src="images/Envotions_Taipei.png" class="w3-image" style="border: 2px solid gray">
+    <p><a class="w3-text w3-small"></a> 地址: 台北市松山區復興北路99號15F <br> 電話: + 886-2-2715-7555 | 傳真: + 886-2-2715-7513</p>
+    </div>
+ 
+    <div class="w3-col m6" style="padding:128px 0 0 0; width: 48.3%; margin: 10px" id="map_hongkong_zh">
+    <img src="images/Envotions_HongKong.png" class="w3-image" style="border: 2px solid gray">
+    <p><a class="w3-text w3-small"></a> 地址: 香港島灣仔區皇后大道東43號 東美商業中心 <br> 電話: + 886-2-2715-7555 | 傳真: + 886-2-2715-7513</p>
+    </div>
+ 
+    <div class="w3-col m6" style="padding:128px 0 0 0; width: 48.3%; margin: 10px" id="map_california_zh">
+    <img src="images/Envotions_CA.png" class="w3-image" style="border: 2px solid gray">
+    <p><a class="w3-text w3-small"></a> 地址: 17534 Von Karman Ave, Irvine, CA 92614 <br> 電話: + 886-2-2715-7555 | 傳真: + 886-2-2715-7513</p>
+    </div>
+ 
+    <div class="w3-col m6" style="padding:128px 0 0 0; width: 48.3%; margin: 10px" id="map_bangalore_zh">
+    <img src="images/Envotions_Bangalore.png" class="w3-image" style="border: 2px solid gray">
+    <p><a class="w3-text w3-small"></a> 地址: 9, 1st floor, 1st Main, Pampa Extn., Hebbal Kempapura, Bangalore <br> 電話: + 91 9880932498 | 傳真: + 886-2-2715-7513</p>
+    </div>
+ 
+    <div class="w3-col m6" style="padding:128px 0 0 0; width: 48.3%; margin: 10px" id="map_shanghai">
+    <img src="images/Envotions_ShangHai.png" class="w3-image" style="border: 2px solid gray">
+    <p><a class="w3-text w3-small"></a> 地址: 上海市閔行區新龍路1333弄96號 <br> 電話: + 886-2-2715-7555 | 傳真: + 886-2-2715-7513</p>
+    </div>
+    
+  </div>
 </div>
 </div>
 
-<div class="main_container_case">
-<div class="main_contain_case"><h2>成功案例</h2>
-<div class="case_more"><a href="work.html"></a></div>
-</div>
-</div>
-<!--CONTAINER->
+
+<!--- Chinese Content end ---->
+
+<!-- Footer -->
+<footer class="w3-center w3-dark-gray w3-padding-64">
+    <span lang="en">
+        <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+    <div class="w3-xlarge w3-section">
+    <!--
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    -->
+    <a href="https://www.linkedin.com/company/envotion-technology-services/" class="fa fa-linkedin w3-hover-opacity w3-hover-text-orange"></a>
+  
+  </div>
+   <div class="footer">
+   <div class="footer_container">
+   智誠科技服務版權所有 Copyright. ©2020 Envotions Co., Ltd. All Rights Reserved.
+  </div>
+   </div>
+    </span>
+
+    <span lang="zh">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>回首頁</a>
+  <div class="w3-xlarge w3-section">
+   <!--
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+    -->
+    <a href="https://www.linkedin.com/company/envotion-technology-services/" class="fa fa-linkedin w3-hover-opacity w3-hover-text-orange"></a>
+  </div>
+  <div class="footer">
+   <div class="footer_container">
+   智誠科技服務版權所有 Copyright. ©2020 Envotions Co., Ltd. All Rights Reserved.
+  </div>
+  </div>
+    </span>
+</footer>
+
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" crossorigin="anonymous"></script> 
+<script> 
+
+$('[lang]').hide(); // hide all lang attributes on start.
+$('[lang="en"]').show(); // show just Korean text (you can change it)
+$('#lang-switch').change(function () { // put onchange event when user select option from select
+    var lang = $(this).val(); // decide which language to display using switch case. The rest is obvious (i think)
+    switch (lang) {
+        case 'en':
+            $('[lang]').hide();
+            $('[lang="en"]').show();
+        break;
+        case 'zh':
+            $('[lang]').hide();
+            $('[lang="zh"]').show();
+        break;
+        default:
+
+            $('[lang]').hide();
+            $('[lang="en"]').show();
+
+        }
+    localStorage.setItem('langString', lang);    
+});
+
+var langSt;
+'use strict';
+    langSt=localStorage.getItem('langString');
+    
+    if(langSt==="en"){
+        $('[lang]').hide();
+        $('[lang="en"]').show();
+        var x = document.getElementById('lang-switch').value;
+        if(x==="zh"){
+            document.getElementById('lang-switch').value="en";
+        }
+            
+    }
+    else{
+        $('[lang]').hide();
+        $('[lang="zh"]').show(); 
+        var x = document.getElementById('lang-switch').value;
+        if(x==="en"){
+            document.getElementById('lang-switch').value="zh";
+        }
+            
+    }
+    
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+  lang_select();
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
 
 
 
-
-<!-FOOTER-->
-<div class="footer">
-<div class="footer_container">
-地址：台北市松山區復興北路99號15F  |  電話：＋886-2-2715-7555  |  傳真：＋886-2-2715-7501<br/>
-智誠科技服務版權所有 Copyright. ©2016 Envotions Co., Ltd. All Rights Reserved.
-</div>
-</div>
-<!--FOOTER-->
-
-
-
-
-</body>
 </html>
